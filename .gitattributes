@@ -1,0 +1,11 @@
+# 统一换行符：脚本在 Linux/macOS 上 clone 下来必须是 LF，否则 bash 会报 $'\r'
+* text=auto eol=lf
+*.sh   text eol=lf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 二进制资源不要做换行转换
+*.jar  binary
+*.ico  binary
+*.png  binary
+*.exe  binary

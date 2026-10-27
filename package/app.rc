@@ -1,0 +1,38 @@
+#include <windows.h>
+
+#define MCL_VER_MAJOR 0
+#define MCL_VER_MINOR 2
+#define MCL_VER_PATCH 0
+#define MCL_VER_BUILD 0
+
+1 ICON "package/icon.ico"
+
+1 VERSIONINFO
+FILEVERSION    MCL_VER_MAJOR,MCL_VER_MINOR,MCL_VER_PATCH,MCL_VER_BUILD
+PRODUCTVERSION MCL_VER_MAJOR,MCL_VER_MINOR,MCL_VER_PATCH,MCL_VER_BUILD
+FILEFLAGSMASK  0x3fL
+FILEFLAGS      0x0L
+FILEOS         VOS_NT_WINDOWS32
+FILETYPE       VFT_APP
+FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName",      "MCL Project"
+            VALUE "FileDescription",  "MCL - Minecraft Launcher"
+            VALUE "FileVersion",      "0.3.0.0"
+            VALUE "InternalName",     "MCL"
+            VALUE "OriginalFilename", "MCL.exe"
+            VALUE "ProductName",      "MCL Minecraft Launcher"
+            VALUE "ProductVersion",   "0.3.0.0"
+            VALUE "LegalCopyright",   "(c) MCL Project - GPLv3"
+            VALUE "Comments",         "Native launcher: locates Java 21+ and starts MCL.jar"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END

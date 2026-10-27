@@ -1,0 +1,20 @@
+# 构建产物
+build/
+dist/
+package/lite/
+
+# 运行时与日志
+logs/
+*.log
+*.part
+cache/
+
+# 编辑器
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
